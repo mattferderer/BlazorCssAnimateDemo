@@ -1,0 +1,41 @@
+﻿.weather-component {
+    --disabled: #808080;
+    --hot: #ffd800;
+    --cold: #00ffff;
+}
+
+.not-loaded {
+    background-color: var(--disabled);
+}
+
+.weather-animation-hot {
+    animation-name: hotAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.weather-animation-cold {
+    animation-name: coldAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes hotAnimation {
+    from {
+        background-color: var(--disabled);
+    }
+
+    to {
+        background-color: var(--hot);
+    }
+}
+
+@keyframes coldAnimation {
+    from {
+        background-color: var(--disabled);
+    }
+
+    to {
+        background-color: var(--cold);
+    }
+}
